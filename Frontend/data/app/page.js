@@ -19,7 +19,7 @@ export default function Home() {
               <Link href={"/responsedata"}>Explore</Link>
             </button>
             <button className="font-medium text-[25px] p-3 border-2 border-white text-white rounded-lg hover:bg-white/10 transition-colors duration-300">
-              Github
+              <Link href={"https://github.com/SuperexMack/assignment_200"}>Github</Link>
             </button>
           </div>
         </div>

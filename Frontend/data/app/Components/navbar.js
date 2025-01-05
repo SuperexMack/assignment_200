@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Navbar() {
     return (
       <>
@@ -15,7 +17,7 @@ export function Navbar() {
               Contact
             </li>
             <li className="text-white hover:text-blue-200 transition-colors duration-300 cursor-pointer">
-              Contribute
+              <Link href={"https://github.com/SuperexMack/assignment_200"}>Contribute</Link>
             </li>
           </div>
         </div>
