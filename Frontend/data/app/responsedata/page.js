@@ -10,7 +10,7 @@ export default function ChatBox() {
 
   const sendData = async () => {
     setLoading(true)
-    await axios.post("http://localhost:8000/getdata", {
+    await axios.post("https://assignment-200-6sfb.vercel.app/getdata", {
       userdaata: userData
     })
     .then((response) => {
@@ -76,7 +76,7 @@ export default function ChatBox() {
                   onClick={sendData}
                   className="px-6 py-2 bg-gradient-to-r from-blue-600 to-indigo-800 text-white rounded-lg hover:opacity-90 transition-opacity font-medium"
                 >
-                  Send
+                  Get Response
                 </button>
               </div>
             </div>
