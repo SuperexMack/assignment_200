@@ -5,7 +5,11 @@ const PORT = process.env.PORT
 const API_KEY = process.env.API_KEY
 const cors = require("cors")
 
-app.use(cors())
+app.use(cors({
+    origin : "https://assignment-200.vercel.app/",
+    methods : ["GET","POST"],
+    allowedHeaders: ['Content-Type,Authorization']
+}))
 app.use(express.json())
 
 
